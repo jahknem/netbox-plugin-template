@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include {{plugin_name}}/templates *
+recursive-include {{plugin_name}}/static *
