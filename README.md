@@ -1,9 +1,10 @@
 # NetBox Plugin Template
 
 This is a template for creating a new plugin for [NetBox](https://github.com/netbox-community/netbox)
-The template is based on the great [NetBox ACL Plugin](https://github.com/ryanmerolle/netbox-acls) by [ryanmerolle](https://github.com/ryanmerolle)
+The template is based on the devcontainer setup from [NetBox ACL Plugin](https://github.com/ryanmerolle/netbox-acls) by [ryanmerolle](https://github.com/ryanmerolle)
 
-To use this template, simply clone it, fill out the plugin.yaml and run the makefile. This will create a new directory with the name of your plugin. 
+It uses devcontainers used by VSCode to create a devcontainer environment in which one can develop and test netbox plugins. To use it VSCode and Docker have to be installed. This Repo has been tested with Docker Desktop using WSL2 on Windows 10. Other Installations may or may not work.
+To use this template, simply clone it, run the setup.py and run the main.py. This will create a new directory with the name of your plugin. 
 
 
 ```bash
