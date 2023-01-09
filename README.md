@@ -9,8 +9,10 @@ To use this template, simply clone it, fill out the plugin.yaml and run the make
 ```bash
 git clone
 cd netbox-plugin-template
-make plugin_name=<your plugin name>
+python setup.py install
+python main.py
 ```
+It will then ask you for relevant variables and create a new directory with the name of your plugin. 
 
 To use the directory in a devcontainer you must push it to a git provider of your choosing an and clone it into a devcontainer. Only then the devcontainer will automatically create a netbox instance in which you can develop, run and test your plugin.
 
@@ -33,6 +35,12 @@ If VSCode has the Remote-Containers extension installed it will automatically as
 
 ```bash
 code --install-extension ms-vscode-remote.remote-containers
+```
+
+Alternatively you can also start VSCode manually in the directory that as created. However this may cause errors due to permission issues. If such an error occures, you must manually delete the container and the volume. You have been warned!
+```
+cd <your plugin name>
+code .
 ```
 
 ## Features
